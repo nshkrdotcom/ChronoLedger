@@ -33,10 +33,21 @@
 Instead of asking customers to join a new blockchain, we provide timing services that enhance their existing infrastructure:
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {
+    'primaryColor': '#4CAF50',
+    'primaryBorderColor': '#388E3C',
+    'secondaryColor': '#2196F3',
+    'secondaryBorderColor': '#1976D2',
+    'tertiaryColor': '#FFC107',
+    'tertiaryBorderColor': '#FFA000',
+    'lineColor': '#616161',
+    'textColor': '#212121',
+    'mainBkg': '#F8F8F8'
+}}}%%
 graph TD
     subgraph "Customer's Existing Infrastructure"
         ETH[Ethereum DApps]
-        SOL[Solana Programs] 
+        SOL[Solana Programs]
         TRAD[Traditional Systems]
         DATABASES[Databases]
     end
@@ -68,10 +79,6 @@ graph TD
     API --> SECURITY
     API --> COMPLIANCE
     API --> AUDIT
-    
-    style TMN fill:#ffebee
-    style API fill:#e8f5e8
-    style PRECISION fill:#fff3e0
 ```
 
 ### 1.2 Service Architecture
@@ -288,6 +295,17 @@ contract PrecisionAuction {
 
 **1. Direct Enterprise Sales**
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {
+    'primaryColor': '#4CAF50',
+    'primaryBorderColor': '#388E3C',
+    'secondaryColor': '#2196F3',
+    'secondaryBorderColor': '#1976D2',
+    'tertiaryColor': '#FFC107',
+    'tertiaryBorderColor': '#FFA000',
+    'lineColor': '#616161',
+    'textColor': '#212121',
+    'mainBkg': '#F8F8F8'
+}}}%%
 graph LR
     subgraph "Sales Process"
         IDENTIFY[Identify Compliance Pain]
@@ -342,6 +360,17 @@ graph LR
 
 #### Onboarding Process
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {
+    'primaryColor': '#4CAF50',
+    'primaryBorderColor': '#388E3C',
+    'secondaryColor': '#2196F3',
+    'secondaryBorderColor': '#1976D2',
+    'tertiaryColor': '#FFC107',
+    'tertiaryBorderColor': '#FFA000',
+    'lineColor': '#616161',
+    'textColor': '#212121',
+    'mainBkg': '#F8F8F8'
+}}}%%
 timeline
     title Customer Onboarding Journey
     
@@ -445,6 +474,17 @@ interface SecurityInfrastructure {
 
 #### Building the Ecosystem
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {
+    'primaryColor': '#4CAF50',
+    'primaryBorderColor': '#388E3C',
+    'secondaryColor': '#2196F3',
+    'secondaryBorderColor': '#1976D2',
+    'tertiaryColor': '#FFC107',
+    'tertiaryBorderColor': '#FFA000',
+    'lineColor': '#616161',
+    'textColor': '#212121',
+    'mainBkg': '#F8F8F8'
+}}}%%
 graph TD
     subgraph "ChronoLedger Platform"
         CORE[Core Timing Infrastructure]
@@ -490,6 +530,17 @@ After proving infrastructure value and building ecosystem, launch the full Tempo
 
 #### Migration Strategy
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {
+    'primaryColor': '#4CAF50',
+    'primaryBorderColor': '#388E3C',
+    'secondaryColor': '#2196F3',
+    'secondaryBorderColor': '#1976D2',
+    'tertiaryColor': '#FFC107',
+    'tertiaryBorderColor': '#FFA000',
+    'lineColor': '#616161',
+    'textColor': '#212121',
+    'mainBkg': '#F8F8F8'
+}}}%%
 graph TD
     subgraph "Phase 1: Infrastructure"
         TIMING[Timing Services]
@@ -516,9 +567,6 @@ graph TD
     SOLUTIONS --> NATIVE
     ECOSYSTEM --> MIGRATION
     SCALE --> FEATURES
-    
-    style NATIVE fill:#e8f5e8
-    style MIGRATION fill:#fff3e0
 ```
 
 #### Value Proposition for Migration

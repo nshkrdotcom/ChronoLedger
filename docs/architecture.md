@@ -7,6 +7,17 @@ This document provides a detailed technical overview of the ChronoLedger Tempora
 ChronoLedger's architecture is built around four core layers that work together to provide hardware-secured, verifiable time as a fundamental blockchain primitive:
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {
+    'primaryColor': '#4CAF50',
+    'primaryBorderColor': '#388E3C',
+    'secondaryColor': '#2196F3',
+    'secondaryBorderColor': '#1976D2',
+    'tertiaryColor': '#FFC107',
+    'tertiaryBorderColor': '#FFA000',
+    'lineColor': '#616161',
+    'textColor': '#212121',
+    'mainBkg': '#F8F8F8'
+}}}%%
 graph TB
     subgraph "Application Layer"
         DAPPS[Time-Dependent DApps]
@@ -57,11 +68,6 @@ graph TB
     CLOCKS --> TMN1
     CLOCKS --> TMN2
     CLOCKS --> TMN3
-    
-    style CLOCKS fill:#e1f5fe
-    style POTA fill:#f3e5f5
-    style TEE fill:#e8f5e8
-    style DAPPS fill:#fff3e0
 ```
 
 ## Hardware Layer: Temporal Mining Nodes (TMNs)
@@ -71,6 +77,17 @@ graph TB
 Each TMN is a specialized hardware unit designed to provide secure, accurate timekeeping:
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {
+    'primaryColor': '#4CAF50',
+    'primaryBorderColor': '#388E3C',
+    'secondaryColor': '#2196F3',
+    'secondaryBorderColor': '#1976D2',
+    'tertiaryColor': '#FFC107',
+    'tertiaryBorderColor': '#FFA000',
+    'lineColor': '#616161',
+    'textColor': '#212121',
+    'mainBkg': '#F8F8F8'
+}}}%%
 graph TD
     subgraph "TMN Physical Enclosure"
         subgraph "Clock Systems"
@@ -114,11 +131,6 @@ graph TD
     TAMPER --> ZEROIZE
     SENSORS --> TAMPER
     MESH --> TAMPER
-    
-    style CSAC fill:#ffebee
-    style STPU fill:#e3f2fd
-    style HSM fill:#f1f8e9
-    style TAMPER fill:#fff3e0
 ```
 
 ### Hardware Components
@@ -142,6 +154,17 @@ graph TD
 ### TMN Data Flow
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {
+    'primaryColor': '#4CAF50',
+    'primaryBorderColor': '#388E3C',
+    'secondaryColor': '#2196F3',
+    'secondaryBorderColor': '#1976D2',
+    'tertiaryColor': '#FFC107',
+    'tertiaryBorderColor': '#FFA000',
+    'lineColor': '#616161',
+    'textColor': '#212121',
+    'mainBkg': '#F8F8F8'
+}}}%%
 sequenceDiagram
     participant CSAC as Atomic Clock
     participant TCXO as Crystal Osc
@@ -173,6 +196,17 @@ sequenceDiagram
 PoTA is a Byzantine Fault Tolerant consensus mechanism that uses temporal accuracy as the primary basis for trust and voting weight.
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {
+    'primaryColor': '#4CAF50',
+    'primaryBorderColor': '#388E3C',
+    'secondaryColor': '#2196F3',
+    'secondaryBorderColor': '#1976D2',
+    'tertiaryColor': '#FFC107',
+    'tertiaryBorderColor': '#FFA000',
+    'lineColor': '#616161',
+    'textColor': '#212121',
+    'mainBkg': '#F8F8F8'
+}}}%%
 graph TD
     subgraph "Block Proposal"
         ELIGIBLE[Check Eligibility]
@@ -220,10 +254,6 @@ graph TD
     COMMIT --> ACCURACY
     ACCURACY --> UPDATE_REP
     UPDATE_REP --> PENALTIES
-    
-    style ATTEST fill:#e8f5e8
-    style VERIFY_TIME fill:#fff3e0
-    style THRESHOLD fill:#f3e5f5
 ```
 
 ### Temporal Reputation System
@@ -231,6 +261,17 @@ graph TD
 The reputation system incentivizes accurate timekeeping:
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {
+    'primaryColor': '#4CAF50',
+    'primaryBorderColor': '#388E3C',
+    'secondaryColor': '#2196F3',
+    'secondaryBorderColor': '#1976D2',
+    'tertiaryColor': '#FFC107',
+    'tertiaryBorderColor': '#FFA000',
+    'lineColor': '#616161',
+    'textColor': '#212121',
+    'mainBkg': '#F8F8F8'
+}}}%%
 graph LR
     subgraph "Inputs"
         TIMESTAMP[Node Timestamp]
@@ -260,9 +301,6 @@ graph LR
     
     REPUTATION --> WEIGHT
     REPUTATION --> STATUS
-    
-    style ACCURACY fill:#e8f5e8
-    style REPUTATION fill:#f3e5f5
 ```
 
 ### Mathematical Foundation
@@ -286,6 +324,17 @@ Where:
 The TEE extends a standard blockchain VM with native temporal capabilities:
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {
+    'primaryColor': '#4CAF50',
+    'primaryBorderColor': '#388E3C',
+    'secondaryColor': '#2196F3',
+    'secondaryBorderColor': '#1976D2',
+    'tertiaryColor': '#FFC107',
+    'tertiaryBorderColor': '#FFA000',
+    'lineColor': '#616161',
+    'textColor': '#212121',
+    'mainBkg': '#F8F8F8'
+}}}%%
 graph TD
     subgraph "Temporal Execution Engine"
         subgraph "Core VM"
@@ -329,10 +378,6 @@ graph TD
     
     MERKLE --> BLOCKS
     STATE --> LOGS
-    
-    style TEMP_OPS fill:#e8f5e8
-    style SCHEDULER fill:#fff3e0
-    style TIMER fill:#ffebee
 ```
 
 ### Temporal Opcodes
@@ -353,6 +398,17 @@ New opcodes for time-based operations:
 The scheduler manages time-based contract execution:
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {
+    'primaryColor': '#4CAF50',
+    'primaryBorderColor': '#388E3C',
+    'secondaryColor': '#2196F3',
+    'secondaryBorderColor': '#1976D2',
+    'tertiaryColor': '#FFC107',
+    'tertiaryBorderColor': '#FFA000',
+    'lineColor': '#616161',
+    'textColor': '#212121',
+    'mainBkg': '#F8F8F8'
+}}}%%
 graph TD
     subgraph "Scheduler Components"
         QUEUE[Priority Queue]
@@ -389,10 +445,6 @@ graph TD
     EXECUTOR --> EXECUTE
     
     CLEANUP --> QUEUE
-    
-    style QUEUE fill:#e8f5e8
-    style EXECUTE fill:#fff3e0
-    style SECURITY fill:#ffebee
 ```
 
 ## Application Layer
@@ -402,6 +454,17 @@ graph TD
 Enables cross-chain temporal verification:
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {
+    'primaryColor': '#4CAF50',
+    'primaryBorderColor': '#388E3C',
+    'secondaryColor': '#2196F3',
+    'secondaryBorderColor': '#1976D2',
+    'tertiaryColor': '#FFC107',
+    'tertiaryBorderColor': '#FFA000',
+    'lineColor': '#616161',
+    'textColor': '#212121',
+    'mainBkg': '#F8F8F8'
+}}}%%
 graph TB
     subgraph "External Blockchain"
         EXT_CONTRACTS[External Contracts]
@@ -433,15 +496,22 @@ graph TB
     PROOFS --> VERIFIER
     VERIFIER --> RELAYERS
     RELAYERS --> EXT_VALIDATORS
-    
-    style ANCHORS fill:#e8f5e8
-    style PROOFS fill:#fff3e0
-    style CONSENSUS_TIME fill:#ffebee
 ```
 
 ### Developer SDK Components
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {
+    'primaryColor': '#4CAF50',
+    'primaryBorderColor': '#388E3C',
+    'secondaryColor': '#2196F3',
+    'secondaryBorderColor': '#1976D2',
+    'tertiaryColor': '#FFC107',
+    'tertiaryBorderColor': '#FFA000',
+    'lineColor': '#616161',
+    'textColor': '#212121',
+    'mainBkg': '#F8F8F8'
+}}}%%
 graph TD
     subgraph "ChronoLedger SDK"
         subgraph "Core Libraries"
@@ -486,10 +556,6 @@ graph TD
     
     RPC_CLIENT --> WEB3_ADAPTER
     WEB3_ADAPTER --> BRIDGE_CLIENT
-    
-    style TIME_LIB fill:#e8f5e8
-    style COMPILER fill:#fff3e0
-    style SIMULATOR fill:#f3e5f5
 ```
 
 ## Security Architecture
@@ -497,6 +563,17 @@ graph TD
 ### Multi-Layer Security Model
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {
+    'primaryColor': '#4CAF50',
+    'primaryBorderColor': '#388E3C',
+    'secondaryColor': '#2196F3',
+    'secondaryBorderColor': '#1976D2',
+    'tertiaryColor': '#FFC107',
+    'tertiaryBorderColor': '#FFA000',
+    'lineColor': '#616161',
+    'textColor': '#212121',
+    'mainBkg': '#F8F8F8'
+}}}%%
 graph TD
     subgraph "Physical Security"
         ENCLOSURE[Tamper-Resistant Enclosure]
@@ -546,11 +623,6 @@ graph TD
     
     BFT_SEC --> TLS
     REPUTATION_SEC --> AUTH
-    
-    style ENCLOSURE fill:#ffebee
-    style HSM_SEC fill:#e8f5e8
-    style POST_QUANTUM fill:#fff3e0
-    style BFT_SEC fill:#f3e5f5
 ```
 
 ## Performance Characteristics

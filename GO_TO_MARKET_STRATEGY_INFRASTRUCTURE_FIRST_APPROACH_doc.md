@@ -19,6 +19,17 @@ The infrastructure-first approach fundamentally changes ChronoLedger's risk prof
 ### **Three-Phase Evolution Strategy**
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {
+    'primaryColor': '#4CAF50',
+    'primaryBorderColor': '#388E3C',
+    'secondaryColor': '#2196F3',
+    'secondaryBorderColor': '#1976D2',
+    'tertiaryColor': '#FFC107',
+    'tertiaryBorderColor': '#FFA000',
+    'lineColor': '#616161',
+    'textColor': '#212121',
+    'mainBkg': '#F8F8F8'
+}}}%%
 timeline
     title ChronoLedger Evolution Path
     

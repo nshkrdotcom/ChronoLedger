@@ -69,6 +69,17 @@ ChronoLedger is designed for high-assurance use cases where time precision and s
 ## Architecture
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {
+    'primaryColor': '#4CAF50',
+    'primaryBorderColor': '#388E3C',
+    'secondaryColor': '#2196F3',
+    'secondaryBorderColor': '#1976D2',
+    'tertiaryColor': '#FFC107',
+    'tertiaryBorderColor': '#FFA000',
+    'lineColor': '#616161',
+    'textColor': '#212121',
+    'mainBkg': '#F8F8F8'
+}}}%%
 graph TD
     subgraph "Hardware Layer"
         TMN1[TMN] --> |Hardware-Attested Time| CONSENSUS

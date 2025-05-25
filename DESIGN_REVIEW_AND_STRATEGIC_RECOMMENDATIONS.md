@@ -37,6 +37,17 @@ ChronoLedger presents a technically ambitious and potentially groundbreaking app
 
 **Recommendations**:
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {
+    'primaryColor': '#4CAF50',
+    'primaryBorderColor': '#388E3C',
+    'secondaryColor': '#2196F3',
+    'secondaryBorderColor': '#1976D2',
+    'tertiaryColor': '#FFC107',
+    'tertiaryBorderColor': '#FFA000',
+    'lineColor': '#616161',
+    'textColor': '#212121',
+    'mainBkg': '#F8F8F8'
+}}}%%
 graph TD
     subgraph "Immediate (2025)"
         TIER[Implement Tiered Node System]
@@ -133,6 +144,17 @@ Launch the complete Temporal Blockchain after proving infrastructure value.
 Instead of pure PoTA, implement a hybrid model:
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {
+    'primaryColor': '#4CAF50',
+    'primaryBorderColor': '#388E3C',
+    'secondaryColor': '#2196F3',
+    'secondaryBorderColor': '#1976D2',
+    'tertiaryColor': '#FFC107',
+    'tertiaryBorderColor': '#FFA000',
+    'lineColor': '#616161',
+    'textColor': '#212121',
+    'mainBkg': '#F8F8F8'
+}}}%%
 graph TD
     subgraph "Layer 1: Time Authority Layer"
         TMN[TMN Nodes with Full Hardware]
@@ -154,10 +176,6 @@ graph TD
     VALIDATORS --> PROCESSING
     PROCESSING --> DAPPS
     DAPPS --> BRIDGE
-    
-    style TMN fill:#ffebee
-    style CONSENSUS fill:#e8f5e8
-    style PROCESSING fill:#fff3e0
 ```
 
 **Benefits**:
@@ -191,6 +209,17 @@ contract TemporalStateChannel {
 Prepare for quantum timing advantages:
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {
+    'primaryColor': '#4CAF50',
+    'primaryBorderColor': '#388E3C',
+    'secondaryColor': '#2196F3',
+    'secondaryBorderColor': '#1976D2',
+    'tertiaryColor': '#FFC107',
+    'tertiaryBorderColor': '#FFA000',
+    'lineColor': '#616161',
+    'textColor': '#212121',
+    'mainBkg': '#F8F8F8'
+}}}%%
 graph TD
     subgraph "Current TMN"
         CSAC[Atomic Clock]
@@ -213,9 +242,6 @@ graph TD
     QCLOCK --> QUANTUM
     CLASSICAL --> CONSENSUS
     QUANTUM --> CONSENSUS
-    
-    style QCLOCK fill:#e1f5fe
-    style QUANTUM fill:#f3e5f5
 ```
 
 ### 4. **Regulatory & Compliance Strategy** ⚠️ **HIGH PRIORITY**
@@ -264,6 +290,17 @@ interface ComplianceFramework {
 
 #### A. **Patent Portfolio Acceleration**
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {
+    'primaryColor': '#4CAF50',
+    'primaryBorderColor': '#388E3C',
+    'secondaryColor': '#2196F3',
+    'secondaryBorderColor': '#1976D2',
+    'tertiaryColor': '#FFC107',
+    'tertiaryBorderColor': '#FFA000',
+    'lineColor': '#616161',
+    'textColor': '#212121',
+    'mainBkg': '#F8F8F8'
+}}}%%
 timeline
     title Patent Filing Strategy
     
@@ -323,6 +360,17 @@ Consider selective open sourcing to build ecosystem:
 
 #### Technical Risks
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {
+    'primaryColor': '#4CAF50',
+    'primaryBorderColor': '#388E3C',
+    'secondaryColor': '#2196F3',
+    'secondaryBorderColor': '#1976D2',
+    'tertiaryColor': '#FFC107',
+    'tertiaryBorderColor': '#FFA000',
+    'lineColor': '#616161',
+    'textColor': '#212121',
+    'mainBkg': '#F8F8F8'
+}}}%%
 graph TD
     subgraph "High-Impact Risks"
         HARDWARE[Hardware Supply Chain]

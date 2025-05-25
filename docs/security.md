@@ -57,6 +57,17 @@ We assume an adversary with the following capabilities:
 ### Multi-Layer Defense Model
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {
+    'primaryColor': '#4CAF50',
+    'primaryBorderColor': '#388E3C',
+    'secondaryColor': '#2196F3',
+    'secondaryBorderColor': '#1976D2',
+    'tertiaryColor': '#FFC107',
+    'tertiaryBorderColor': '#FFA000',
+    'lineColor': '#616161',
+    'textColor': '#212121',
+    'mainBkg': '#F8F8F8'
+}}}%%
 graph TD
     subgraph "Physical Layer"
         TAMPER[Tamper-Resistant Enclosure]
@@ -112,12 +123,6 @@ graph TD
     BFT --> GOSSIP
     REPUTATION --> AUTH
     CONSENSUS --> DDOS
-    
-    style TAMPER fill:#ffebee
-    style HSM fill:#e8f5e8
-    style POSTQ fill:#fff3e0
-    style POTA fill:#f3e5f5
-    style TLS fill:#e1f5fe
 ```
 
 ## Attack Vectors and Mitigations
@@ -172,6 +177,17 @@ graph TD
 
 **Mitigations**:
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {
+    'primaryColor': '#4CAF50',
+    'primaryBorderColor': '#388E3C',
+    'secondaryColor': '#2196F3',
+    'secondaryBorderColor': '#1976D2',
+    'tertiaryColor': '#FFC107',
+    'tertiaryBorderColor': '#FFA000',
+    'lineColor': '#616161',
+    'textColor': '#212121',
+    'mainBkg': '#F8F8F8'
+}}}%%
 graph TD
     PHYSICAL[Physical Access] --> DETECTION[Tamper Detection]
     DETECTION --> RESPONSE[Immediate Response]
@@ -203,9 +219,6 @@ graph TD
     RESPONSE --> ALERT
     RESPONSE --> SHUTDOWN
     RESPONSE --> LOG
-    
-    style DETECTION fill:#ffebee
-    style ZEROIZE fill:#e8f5e8
 ```
 
 #### Attack: Side-Channel Analysis
